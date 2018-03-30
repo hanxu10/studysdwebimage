@@ -13,6 +13,7 @@
 		0FE1FC4A206DC3EE0009AEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE1FC49206DC3EE0009AEC1 /* Assets.xcassets */; };
 		0FE1FC4D206DC3EE0009AEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE1FC4B206DC3EE0009AEC1 /* LaunchScreen.storyboard */; };
 		0FE1FC50206DC3EE0009AEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC4F206DC3EE0009AEC1 /* main.m */; };
+		14D993747EEC29505A71AEBA /* libPods-studysdwebimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3AC0E20340A5B68AE55DD9 /* libPods-studysdwebimage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0FE1FC4C206DC3EE0009AEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FE1FC4E206DC3EE0009AEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FE1FC4F206DC3EE0009AEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E3AC0E20340A5B68AE55DD9 /* libPods-studysdwebimage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-studysdwebimage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69702A7D0EB2703D3C4D696A /* Pods-studysdwebimage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studysdwebimage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-studysdwebimage/Pods-studysdwebimage.debug.xcconfig"; sourceTree = "<group>"; };
+		96DDE01141C3E6564D6A0701 /* Pods-studysdwebimage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studysdwebimage.release.xcconfig"; path = "Pods/Target Support Files/Pods-studysdwebimage/Pods-studysdwebimage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D993747EEC29505A71AEBA /* libPods-studysdwebimage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0FE1FC3F206DC3EE0009AEC1 /* studysdwebimage */,
 				0FE1FC3E206DC3EE0009AEC1 /* Products */,
+				4DE8726DCF79F34C576B6069 /* Pods */,
+				D10DBCD7F75FE1567F0758F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = studysdwebimage;
 			sourceTree = "<group>";
 		};
+		4DE8726DCF79F34C576B6069 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69702A7D0EB2703D3C4D696A /* Pods-studysdwebimage.debug.xcconfig */,
+				96DDE01141C3E6564D6A0701 /* Pods-studysdwebimage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D10DBCD7F75FE1567F0758F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E3AC0E20340A5B68AE55DD9 /* libPods-studysdwebimage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FE1FC53206DC3EE0009AEC1 /* Build configuration list for PBXNativeTarget "studysdwebimage" */;
 			buildPhases = (
+				E9AF5065993E780DF31081A9 /* [CP] Check Pods Manifest.lock */,
 				0FE1FC39206DC3EE0009AEC1 /* Sources */,
 				0FE1FC3A206DC3EE0009AEC1 /* Frameworks */,
 				0FE1FC3B206DC3EE0009AEC1 /* Resources */,
+				5D3D4D5F4E3C9F705FF33140 /* [CP] Embed Pods Frameworks */,
+				2234F3F160AF71E7247D2D0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2234F3F160AF71E7247D2D0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-studysdwebimage/Pods-studysdwebimage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D3D4D5F4E3C9F705FF33140 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-studysdwebimage/Pods-studysdwebimage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AF5065993E780DF31081A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-studysdwebimage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FE1FC39206DC3EE0009AEC1 /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		0FE1FC54206DC3EE0009AEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69702A7D0EB2703D3C4D696A /* Pods-studysdwebimage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +368,7 @@
 		};
 		0FE1FC55206DC3EE0009AEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96DDE01141C3E6564D6A0701 /* Pods-studysdwebimage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
