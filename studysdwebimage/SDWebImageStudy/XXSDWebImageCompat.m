@@ -9,6 +9,8 @@
 #import "XXSDWebImageCompat.h"
 #import "UIImage+XXMultiFormat.h"
 
+NSString *const XXSDWebImageErrorDomain = @"XXSDWebImageErrorDomain";
+
 inline UIImage *XXSDScaledImageForKey(NSString *key, UIImage *image)
 {
     if (!image) {

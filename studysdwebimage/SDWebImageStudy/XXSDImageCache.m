@@ -333,7 +333,7 @@ FOUNDATION_STATIC_INLINE NSUInteger XXSDCacheCostForImage(UIImage *image)
                     completion:(XXSDWebImageCheckCacheCompletionBlock)completionBlock
 {
     dispatch_async(self.ioQueue, ^{
-        BOOL exists = [self _diskImageDataExistWithKey:key];
+        BOOL exists = [self _diskImageDataExistsWithKey:key];
         if (completionBlock) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionBlock(exists);
@@ -380,6 +380,7 @@ FOUNDATION_STATIC_INLINE NSUInteger XXSDCacheCostForImage(UIImage *image)
         NSUInteger cost = XXSDCacheCostForImage(diskImage);
         [self.memCache setObject:diskImage forKey:key cost:cost];
     }
+    return diskImage;
 }
 
 - (UIImage *)imageFromCacheForKey:(NSString *)key
